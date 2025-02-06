@@ -1,0 +1,154 @@
+.Container {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  padding: 1rem;
+}
+
+.FirstContainer,
+.SecondContainer {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  background-color: rgb(244, 244, 237);
+  border-radius: 20px;
+  gap: 120px;
+  width: 97%;
+  max-width: 1200px;
+}
+
+.FirstContainer h2,
+.SecondContainer h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.FirstContainer img,
+.SecondContainer img {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  object-fit: contain;
+}
+
+.FirstContainer button,
+.SecondContainer button {
+  border: 1.4px solid #202124;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.FirstContainer button:hover,
+.SecondContainer button:hover {
+  background-color: #b4b7ba;
+}
+
+
+.ThirdContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  width: 100%;
+}
+
+.first,
+.second {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(244, 244, 237);
+  border-radius: 20px;
+  width: 45%;
+  max-width: 600px;
+  padding: 0 16px;
+}
+
+.first h2,
+.second h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.first img,
+.second img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  object-fit: contain;
+}
+
+.first button,
+.second button {
+  border: 1.4px solid #202124;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.first button:hover,
+.second button:hover {
+  background-color: #b4b7ba;
+}
+
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+
+  .FirstContainer,
+  .SecondContainer {
+    width: 100%;
+    max-width: 90%;
+  }
+
+  .first,
+  .second {
+    width: 90%;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .FirstContainer,
+  .SecondContainer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    max-width: 100%;
+  }
+
+  .first,
+  .second {
+    width: 100%;
+  }
+
+  .FirstContainer h2,
+  .SecondContainer h2,
+  .first h2,
+  .second h2 {
+    font-size: 1.6rem;
+  }
+
+  .FirstContainer img,
+  .SecondContainer img,
+  .first img,
+  .second img {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .FirstContainer h2,
+  .SecondContainer h2,
+  .first h2,
+  .second h2 {
+    font-size: 1.4rem;
+  }
+}

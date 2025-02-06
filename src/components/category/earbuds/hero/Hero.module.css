@@ -1,0 +1,102 @@
+/* Container */
+.container {
+  padding: 20px;
+  text-align: center;
+}
+
+/* Title */
+.title {
+  font-size: 3.5rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #202124;
+}
+
+.flexWrapper {
+  display: flex;
+  flex-wrap: wrap; /* Allows wrapping for smaller screens */
+  justify-content: center;
+  align-items: center;
+  width: 100%; 
+  margin: 0 auto;
+}
+
+.card {
+  text-align: center;
+  border-radius: 10px;
+  padding: 15px;
+  transition: transform 0.3s ease;
+  width: 200px; 
+  max-width: 90%; 
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.card img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.card a {
+  color: #202124;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.card a:hover {
+  color: #1a73e8;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .title {
+    font-size: 3rem; /* Slightly smaller title for medium screens */
+  }
+
+  .card {
+    width: 180px; /* Smaller card size */
+    padding: 12px; /* Adjusted padding */
+  }
+
+  .flexWrapper {
+    gap: 12px; /* Reduce gap between cards */
+  }
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 2.5rem; /* Reduce title size further */
+  }
+
+  .card {
+    width: 160px; /* Smaller cards for smaller screens */
+    padding: 10px;
+  }
+
+  .card a {
+    font-size: 0.9rem; /* Reduce font size for links */
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 2rem; /* Title for mobile */
+  }
+
+  .card {
+    width: 140px; /* Smallest card size for mobile */
+    padding: 8px;
+  }
+
+  .card img {
+    border-radius: 6px; /* Adjust image radius for smaller cards */
+  }
+
+  .card a {
+    font-size: 0.8rem; /* Further reduce link font size */
+  }
+}

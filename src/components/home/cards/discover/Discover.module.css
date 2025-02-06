@@ -1,0 +1,151 @@
+/* Container */
+.container {
+    padding:20px;
+    text-align: center;
+  }
+  
+  /* Title */
+  .title {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #202124;
+  }
+  
+  /* Slider Wrapper */
+  .sliderWrapper {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+  }
+  
+  /* Slider */
+  .slider {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding: 10px 0;
+  }
+  
+  .slider::-webkit-scrollbar {
+    display: none; /* Hide scrollbar */
+  }
+  
+  /* Card */
+  .card {
+    flex: 0 0 300px;
+    text-align: center;
+    padding: 15px;
+    transition: transform 0.3s ease;
+  }
+  
+  .card img {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .card a {
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    font-size: 1.2rem;
+  }
+  
+  /* Arrows */
+  .arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2rem;
+    color: #5f6368;
+    cursor: pointer;
+    background: none;
+    border: none;
+    outline: none;
+    z-index: 1;
+  }
+  
+  .leftArrow {
+    left: 10px;
+  }
+  
+  .rightArrow {
+    right: 10px;
+  }
+  
+  .arrow:hover {
+    color: #1a73e8;
+  }
+
+.subscription
+{
+    padding:0 20px;
+}
+
+.subscribeIcon{
+    font-size: 40px;
+    padding-top: 20px;
+}
+.subscription {
+    margin: auto;
+    text-align: center;
+    background-color: #e5edf5;
+    border-radius: 20px;
+}
+.subscribeText {
+    font-size:2rem;
+    margin-bottom: 10px;
+    color: #202124;
+}
+.subscribeButton {
+    color: #f9fbfd;
+    background-color: #1c67e8;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.subscribeButton:hover {
+    background-color: #727376;
+}
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .card {
+      flex: 0 0 150px;
+    }
+  
+    .title {
+      font-size: 1.5rem;
+    }
+  
+    .arrow {
+      font-size: 1.5rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .card {
+      flex: 0 0 120px;
+    }
+  
+    .title {
+      font-size: 1.2rem;
+    }
+  
+    .arrow {
+      font-size: 1.2rem;
+    }
+    .subscribeText {
+        font-size: 1rem;
+    }
+    .subscribeButton {
+        font-size: 0.9rem;
+    }
+
+  }
+  

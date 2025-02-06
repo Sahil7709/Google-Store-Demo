@@ -1,0 +1,90 @@
+.Container {
+  margin: auto;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  padding: 1rem;
+}
+
+.FirstContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  width: 100%;
+}
+
+.first,
+.second {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(244, 244, 237);
+  border-radius: 20px;
+  width: 45%;
+  max-width: 600px;
+  padding: 0 16px;
+  min-height: 600px;
+}
+
+.first h2,
+.second h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.first img,
+.second img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  object-fit: contain;
+}
+
+.first button,
+.second button {
+  border: 1.4px solid #202124;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.first button:hover,
+.second button:hover {
+  background-color: #b4b7ba;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  .first,
+  .second {
+    width: 90%;
+    min-height: 350px; /* Adjust for smaller screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .first,
+  .second {
+    width: 100%;
+    min-height: 300px; /* Further adjust for narrower screens */
+  }
+
+  .first h2,
+  .second h2 {
+    font-size: 1.6rem;
+  }
+
+  .first img,
+  .second img {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .first h2,
+  .second h2 {
+    font-size: 1.4rem;
+  }
+}

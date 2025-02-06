@@ -1,0 +1,121 @@
+/* Container */
+.container {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Title */
+  .Title {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #202124;
+  }
+  
+  /* Slider Wrapper */
+  .sliderWrapper {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+  }
+  
+  /* Slider */
+  .slider {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    gap: 20px;
+    padding: 10px 0;
+  }
+  
+  .slider::-webkit-scrollbar {
+    display: none; /* Hide scrollbar */
+  }
+  
+  /* Card */
+  .card {
+    flex: 0 0 200px;
+    text-align: center;
+    background-color: #f4f6f8;
+    border-radius: 10px;
+    padding: 15px;
+    transition: transform 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .card img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+  }
+  
+  .card a {
+    color: #202124;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1rem;
+  }
+  
+  .card a:hover {
+    color: #1a73e8;
+
+  }
+  
+  /* Arrows */
+  .arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2rem;
+    color: #5f6368;
+    cursor: pointer;
+    background: none;
+    border: none;
+    outline: none;
+    z-index: 1;
+  }
+  
+  .leftArrow {
+    left: 10px;
+  }
+  
+  .rightArrow {
+    right: 10px;
+  }
+  
+  .arrow:hover {
+    color: #a4a6aa;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .card {
+      flex: 0 0 150px;
+    }
+  
+    .title {
+      font-size: 1.5rem;
+    }
+  
+    .arrow {
+      font-size: 1.5rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .card {
+      flex: 0 0 120px;
+    }
+  
+    .title {
+      font-size: 1.2rem;
+    }
+  
+    .arrow {
+      font-size: 1.2rem;
+    }
+  }
+  

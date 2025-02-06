@@ -1,0 +1,152 @@
+.Container {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding: 1rem;
+  }
+  
+  .FirstContainer,
+  .SecondContainer,
+  .ThirdContainer {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: rgb(244, 244, 237);
+    border-radius: 20px;
+    padding: 2rem;
+    gap: 2rem;
+    width: 97%;
+    max-width: 1200px;
+    box-sizing: border-box;
+  }
+
+  .SecondContainer
+  {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+  }
+  
+  .FirstContainer h2,
+  .SecondContainer h2,
+  .ThirdContainer h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #202124;
+  }
+  
+  .FirstContainer p,
+  .SecondContainer p,
+  .ThirdContainer p {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #5f6368;
+    margin-bottom: 1rem;
+  }
+  
+  .FirstContainer button,
+  .SecondContainer button,
+  .ThirdContainer button {
+    border: 1.4px solid #202124;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .FirstContainer button:hover,
+  .SecondContainer button:hover,
+  .ThirdContainer button:hover {
+    background-color: #b4b7ba;
+  }
+  
+  .FirstContainer img,
+  .SecondContainer img,
+  .ThirdContainer img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    object-fit: contain;
+    border-radius: 10px;
+  }
+  
+  @media (max-width: 1024px) {
+
+    .FirstContainer,
+    .SecondContainer,
+    .ThirdContainer {
+      width: 100%;
+      max-width: 90%;
+    }
+  
+    .FirstContainer img,
+    .SecondContainer img,
+    .ThirdContainer img {
+      max-width: 100%; 
+    }
+  }
+  
+  @media (max-width: 768px) {
+
+    .FirstContainer,
+    .SecondContainer,
+    .ThirdContainer {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 1rem;
+    }
+  
+    .FirstContainer h2,
+    .SecondContainer h2,
+    .ThirdContainer h2 {
+      font-size: 1.6rem;
+    }
+  
+    .FirstContainer p,
+    .SecondContainer p,
+    .ThirdContainer p {
+      font-size: 0.9rem;
+    }
+  
+    .FirstContainer button,
+    .SecondContainer button,
+    .ThirdContainer button {
+      padding: 8px 16px;
+      font-size: 0.9rem;
+    }
+  
+    .FirstContainer img,
+    .SecondContainer img,
+    .ThirdContainer img {
+      max-width: 100%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+
+    .FirstContainer h2,
+    .SecondContainer h2,
+    .ThirdContainer h2 {
+      font-size: 1.4rem;
+    }
+  
+    .FirstContainer p,
+    .SecondContainer p,
+    .ThirdContainer p {
+      font-size: 0.8rem;
+    }
+  
+    .FirstContainer button,
+    .SecondContainer button,
+    .ThirdContainer button {
+      padding: 6px 12px;
+      font-size: 0.8rem;
+    }
+  }
+  

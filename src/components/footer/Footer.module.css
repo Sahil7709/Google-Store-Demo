@@ -1,0 +1,33 @@
+.Footer {
+    background-color: #f1f1f1;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  .FooterContainer {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .FooterLinks {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+  
+  .FooterLink {
+    text-decoration: none;
+    color: #202124;
+    font-size: 0.9rem;
+    font-weight: 500;
+  }
+  
+  .FooterLink:hover {
+    text-decoration: underline;
+    color: #1a73e8;
+  }
+  

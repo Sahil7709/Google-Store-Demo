@@ -1,0 +1,112 @@
+/* Main Container */
+.Container {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Title */
+  .Title {
+    font-size: 2rem;
+    font-weight: bold;
+    padding:40px;
+    color: #202124;
+  }
+  
+  /* Grid Layout */
+  .Grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    grid-template-rows: auto auto auto; /* Three rows initially */
+    grid-gap: 20px; /* Increased space between cells */
+    margin-top: 20px;
+  }
+
+  .middle-row {
+    grid-row: 2; /* Specify that this row is in the middle */
+  }
+  
+  /* Grid Item */
+  .GridItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(244, 244, 237);
+    border-radius: 20px;
+  }
+  
+  /* Text Section */
+  .Text h2 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #97989a;
+    margin-bottom: 5px;
+  }
+  
+  .Text p {
+    font-size: 1.5rem;
+    font-weight:600;
+    margin-bottom: 10px;
+  }
+  
+  .Image {
+    width: 500px; /* Increased width */
+    height: 500px; /* Increased height */
+    border-radius: 8px;
+    object-fit: cover; /* Maintain aspect ratio */
+  }
+  
+  /* Button */
+  .Button {
+    padding: 12px 24px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 15px;
+    border: 2px solid black;
+    transition: background-color 0.3s ease;
+  }
+  
+  .Button:hover {
+    background-color: #e0e2e3;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .Grid {
+      grid-template-columns: 1fr; /* Single column layout on tablets */
+    }
+  
+    .Text h2 {
+      font-size: 1rem;
+    }
+  
+    .Text p {
+      font-size: 0.8rem;
+    }
+  
+    .Image {
+      width: 120px; /* Adjusted for medium screens */
+      height: 120px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .Title {
+      font-size: 1.5rem;
+    }
+  
+    .Text h2 {
+      font-size: 0.9rem;
+    }
+  
+    .Text p {
+      font-size: 0.7rem;
+    }
+  
+    .Image {
+      width: 100px; /* Adjusted for small screens */
+      height: 100px;
+    }
+  }
+  

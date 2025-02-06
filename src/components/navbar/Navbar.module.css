@@ -1,0 +1,175 @@
+.Navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    height: 50px;
+    background-color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-sizing: border-box;
+}
+
+.brand img
+{
+    width: 26px;
+    height: 26px;
+}
+
+.brand a {
+    text-decoration: none;
+    color: #333;
+    display: flex;
+    align-items: center;
+}
+
+.links {
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-left: 20px;
+    flex-grow: 1; 
+    justify-content: flex-start;
+}
+
+.links li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+.links li a:hover {
+    color: #1a73e8; 
+}
+
+.utilityIcons {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.utilityIcons a {
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.utilityIcons a:hover {
+    color: #1a73e8; 
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 4px;
+    cursor: pointer;
+}
+
+.hamburger span {
+    width: 24px;
+    height: 3px;
+    background: #333;
+    border-radius: 2px;
+}
+
+.mobileMenu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 56px;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 1rem 0;
+}
+
+.mobileMenu a {
+    padding: 10px 20px;
+    text-align: left;
+    color: #333;
+    text-decoration: none;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.mobileMenu a:hover {
+    color: #1a73e8;
+}
+
+.mobileMenu a:last-child {
+    border-bottom: none;
+}
+
+@media screen and (min-width: 1025px) {
+    .links {
+        display: flex; 
+        gap: 2rem;
+    }
+    .hamburger {
+        display: none;
+    }
+    .mobileMenu {
+        display: none; 
+    }
+}
+
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+    .Navbar {
+        padding: 0 15px;
+    }
+    .links {
+        gap: 1rem; 
+    }
+    .utilityIcons {
+        gap: 1rem; 
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+
+    .Navbar {
+        padding: 0 10px; 
+    }
+
+    .links {
+        display: none; 
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .utilityIcons {
+        gap: 1rem; 
+    }
+
+    .mobileMenu {
+        display: none;
+    }
+
+    .mobileMenu.mobileMenu {
+        display: flex;
+    }
+
+    .links li a {
+        font-size: 16px; 
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .Navbar {
+        padding: 0 10px;
+    }
+    .links {
+        gap: 0.5rem; 
+    }
+    .utilityIcons {
+        gap: 1rem; 
+    }
+}
